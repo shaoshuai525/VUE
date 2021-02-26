@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+    <!-- 插值表达式 -->
+    <div id="app">
+        {{ msg }}
+        {{ 123456789 }}
+        {{ '你好' }}
+        {{ true }}
+        {{ ['a','b','c'] }}
+        {{ {name: '邵', age: 18} }}
+        {{ 1 + 1 }}
+    </div>
+
+    <script src="./vue.js"></script>
+    <script>
+        // el 元素
+        // 控制id为app的区域
+
+        //插值表达式
+        //数据
+        //数字、字符串、boolean、array、object
+        //表达式
+        // 要写经过声明的数据，否则报错
+
+        const vm = new Vue({
+            // vm.$mount('#app')等效于el: '#app', vm.$mount可以写在外面
+            el: '#app',
+            data: {
+                msg: 'hello world'
+            }
+        });
+
+        
+
+
+    </script>
+</body>
+</html>
